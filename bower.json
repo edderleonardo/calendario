@@ -1,0 +1,27 @@
+{
+  "name": "Calendario",
+  "authors": [
+    "Edder Leonardo <edderleonardo@gmail.com>"
+  ],
+  "description": "Calendario con Angular, Bootstrap",
+  "main": "",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-animate": "^1.5.3",
+    "angular-bootstrap": "^1.2.5",
+    "angular-bootstrap-calendar": "^0.19.4",
+    "angular-i18n": "^1.5.3",
+    "interact": "^1.2.6"
+  }
+}

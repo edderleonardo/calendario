@@ -1,0 +1,39 @@
+<!doctype html>
+<html ng-app="mwl.calendar.docs">
+<head>
+    <meta charset="UTF-8">
+    <script src="bower_components/moment/min/moment.min.js"></script>
+    <script src="bower_components/interact/dist/interact.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="bower_components/angular-bootstrap-calendar/dist/js/angular-bootstrap-calendar-tpls.min.js"></script>
+    <script src="bower_components/angular-i18n/angular-locale_es-mx.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/helpers.js"></script>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bower_components/angular-bootstrap-calendar/dist/css/angular-bootstrap-calendar.min.css"
+          rel="stylesheet">
+</head>
+<body>
+
+<div ng-controller="OptionalEventEndDatesCtrl as vm">
+    <h2 class="text-center">{{ vm.calendarTitle }}</h2>
+    <ng-include src="'calendarControls.html'"></ng-include>
+    <mwl-calendar
+            events="vm.events"
+            view="vm.calendarView"
+            view-title="vm.calendarTitle"
+            view-date="vm.viewDate"
+            cell-is-open="vm.isCellOpen"
+            on-event-click="vm.eventClicked(calendarEvent);"
+    >
+    </mwl-calendar>
+
+
+
+</div>
+
+</body>
+</html>
